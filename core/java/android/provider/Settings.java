@@ -5244,6 +5244,17 @@ public final class Settings {
          */
         public static final String LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
 
+
+        /**
+        *  Use with {@link #getSystemService} to retrieve a
+        *  {@link android.os.PocketManager} for accessing and listening to device pocket state.
+        *
+        * @hide
+        * @see #getSystemService
+        * @see android.os.PocketManager
+        */
+        public static final String POCKET_SERVICE = "pocket";
+
         /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
@@ -5409,6 +5420,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE_VENDOR_HINT);
             PRIVATE_SETTINGS.add(NETWORK_TRAFFIC_VIEW_LOCATION);
+            PRIVATE_SETTINGS.add(POCKET_JUDGE);
         }
 
         /**
